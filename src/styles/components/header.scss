@@ -1,0 +1,27 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+
+    .navbar {
+        width: 25%;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                color: $color-1;
+                font-family: $font-1;
+                font-size: 2rem;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

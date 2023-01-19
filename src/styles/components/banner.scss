@@ -1,0 +1,29 @@
+.banner {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 6% 5%;
+
+    img {
+        border-radius: 2.5rem;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .homeBanner_overlay {
+        position: absolute;
+        background: linear-gradient(transparent, rgba(0, 0, 0, .5));
+        height: 100%;
+        width: 100%;
+        border-radius: 2.5rem;
+    }
+
+    .hommeBanner_title {
+        position: absolute;
+        color: white;
+        align-self: center;
+        font-size: 4.8rem;
+        font-family: $font-1;
+        font-weight: 500;
+    }
+}

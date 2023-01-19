@@ -1,0 +1,12 @@
+.collapse {
+    align-items: center;
+    background-color: $color-1;
+    padding: 1rem;
+    width: 50%;
+    margin: auto;
+    color: white;
+    .hide {
+        display: none;
+    }
+    
+}
