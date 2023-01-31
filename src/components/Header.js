@@ -4,7 +4,7 @@ import image from "../assets/img/logoBanner.png";
 
 const Headers = () => {
     return (
-        <header className="main">
+        <header className="navbar_main">
             <img src={image} alt="logo" />
             <nav className="navbar">
                 <ul>

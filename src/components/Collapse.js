@@ -1,20 +1,19 @@
 import React from "react";
 import { useState } from "react";
-
-const Collapse = () => {
+import image from "../assets/img/vectorCollapse.png";
+const Collapse = (props) => {
     const [hidden, setHidden] = useState(false);
     const handleShow = () => {
         setHidden(!hidden);
     };
     return (
-        <section>
-            <div className="collapse" onClick={handleShow}>
-                test - {`hidden = ${hidden}`}
-                <div className={`${hidden ? "hide" : "show"}`}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, quam.
-                </div>
-            </div>
-        </section>
+        <div className={`collapse ${hidden ? "collapsed" : "expended"}`} onClick={handleShow}>
+            <h3 className="collapse_header">
+                {props.title}
+                <img src={image} alt="" />
+            </h3>
+            <div className="collapse_content">{props.children}</div>
+        </div>
     );
 };
 

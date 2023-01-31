@@ -1,15 +1,20 @@
 import React from "react";
-import Header from "../components/Header";
 import image from "../assets/img/imgAbout.png";
 import Banner from "../components/Banner";
 import Collapse from "../components/Collapse";
+import Data from "../datas/about.json";
 
 const About = () => {
     return (
         <>
-            <Header />
             <Banner image={image} />
-            <Collapse />
+            <section>
+                {Data.map((data) => (
+                    <Collapse key={data.id} title={data.title}>
+                        <p>{data.text}</p>
+                    </Collapse>
+                ))}
+            </section>
         </>
     );
 };
