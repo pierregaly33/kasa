@@ -8,7 +8,7 @@ const About = () => {
     return (
         <>
             <Banner image={image} />
-            <section>
+            <section className="collapse_main about">
                 {Data.map((data) => (
                     <Collapse key={data.id} title={data.title}>
                         <p>{data.text}</p>

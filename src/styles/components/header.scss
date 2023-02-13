@@ -5,7 +5,6 @@
     margin: 2% 5%;
     .navbar {
         width: 25%;
-
         ul {
             display: flex;
             justify-content: space-between;
@@ -13,10 +12,28 @@
             li {
                 color: $color-1;
                 font-family: $font-1;
-                font-size: 2rem;
+                font-size: 20px;
 
                 &:hover {
                     text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar_main {
+        justify-content: unset;
+        img {
+            width: 145px;
+        }
+        .navbar {
+            width: 50%;
+            margin-left: 30px;
+            ul {
+                li {
+                    font-size: 15px;
                 }
             }
         }

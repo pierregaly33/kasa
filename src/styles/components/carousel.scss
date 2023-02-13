@@ -28,7 +28,7 @@
         width: 100%;
         img {
             width: 100%;
-            height: 40rem;
+            height: 400px;
             object-fit: cover;
         }
         .compteur {
@@ -36,13 +36,29 @@
             width: 100%;
             text-align: center;
             bottom: 0;
-            font-size: 2rem;
+            font-size: 20px;
             color: white;
         }
     }
     
     .inactive {
         display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .carousel {
+        .right{
+            img {
+                height: 50px;
+            }
+        }
+        
+        .left {
+            img {
+                height: 50px;
+            }
+        }
     }
 }
 

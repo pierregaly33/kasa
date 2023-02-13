@@ -3,6 +3,7 @@
     .fichelogement_content {
         display: flex;
         justify-content: space-between;
+        margin: 15px 0;
         .logement_information {
             display: flex;
             flex-direction: column;
@@ -16,8 +17,8 @@
             .tag {
                 background-color: $color-1;
                 color: white;
-                padding: 0.5rem 2rem;
-                margin-right: 1rem;
+                padding: 5px 20px;
+                margin-right: 10px;
                 border-radius: 10px;
             }
         }
@@ -42,7 +43,7 @@
                 }
                 img {
                     border-radius: 65px;
-                    height: 6.5rem;
+                    height: 65px;
                     
                 }
             }
@@ -50,6 +51,31 @@
         .rating {
             display: flex;
             justify-content: space-between;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .fichelogement {
+        .fichelogement_content {
+            flex-direction: column;
+            .main_tags {
+                flex-wrap: wrap;
+                row-gap: 10px;
+            }
+            .host_and_rate {
+                align-items: unset;
+                flex-direction: row-reverse;
+                .rating {
+                    justify-content: unset;
+                    align-items: center;
+                    width: 100%;
+                }
+            }
+            .logement_information {
+                justify-content: unset;
+                row-gap: 5px;
+            }
         }
     }
 }

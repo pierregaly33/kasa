@@ -25,9 +25,7 @@ const Fichelogement = () => {
                         </div>
                     </div>
                     <div className="host_and_rate">
-                        <div className="host">
-                            <Host host={logement.host} />
-                        </div>
+                        <Host host={logement.host} />
                         <Rating rating={logement.rating} />
                     </div>
                 </div>

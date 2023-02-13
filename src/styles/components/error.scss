@@ -1,9 +1,30 @@
 .error {
     display: flex;
     margin: auto;
-    height: 100vh;
+    height: 62vh;
     flex-direction: column;
+    text-align: center;
+    justify-content: center;
     img {
-        margin: auto;
+        object-fit: scale-down;
+        height: 250px;
+    }
+    h3 {
+        color: $color-1;
+    }
+}
+
+.retour_accueil {
+    p {
+        font-size: 18px;
+        color: $color-1;
+        text-align: center;
+        text-decoration: underline;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .error {
+        height: 64vh;
     }
 }

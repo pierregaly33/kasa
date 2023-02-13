@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import image from "../assets/img/vectorCollapse.png";
 const Collapse = (props) => {
-    const [hidden, setHidden] = useState(false);
+    const [hidden, setHidden] = useState(true);
     const handleShow = () => {
         setHidden(!hidden);
     };
