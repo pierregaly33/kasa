@@ -8,10 +8,10 @@ const Headers = () => {
             <img src={image} alt="logo" />
             <nav className="navbar">
                 <ul>
-                    <NavLink to="/">
+                    <NavLink className="accueil" to="/">
                         <li>Accueil</li>
                     </NavLink>
-                    <NavLink to="/about">
+                    <NavLink className="about" to="/about">
                         <li>A propos</li>
                     </NavLink>
                 </ul>

@@ -8,6 +8,9 @@
     img {
         object-fit: scale-down;
         height: 250px;
+        width: 600px;
+        display: flex;
+        margin: 0 auto;
     }
     h3 {
         color: $color-1;
@@ -26,5 +29,13 @@
 @media screen and (max-width: 768px) {
     .error {
         height: 64vh;
+        img {
+            height: 100px;
+            display: flex;
+            width: 100%;
+        }
+        h3 {
+            margin-top: 15px;
+        }
     }
 }

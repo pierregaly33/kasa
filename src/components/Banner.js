@@ -5,7 +5,6 @@ const Banner = (props) => {
         <div className="banner">
             <img src={props.image} alt="banner" />
             {props.withOverlay && <div className="homeBanner_overlay"></div>}
-            <h2 className="hommeBanner_title">{props.title}</h2>
             {props.title && <h2 className="hommeBanner_title">{props.title}</h2>}
         </div>
     );

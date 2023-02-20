@@ -23,21 +23,23 @@ const Carousel = (props) => {
 
     return (
         <div className="carousel">
-            <div className="left">
-                <img onClick={previous} src={arrowLeft} alt="" />
-            </div>
-            <div className="right">
-                <img onClick={next} src={arrowright} alt="" />
-            </div>
-            {/* <img src={props.urls[carousel]} alt="" /> */}
+            {props.images.length > 1 && (
+                <>
+                    <div className="left">
+                        <img onClick={previous} src={arrowLeft} alt="" />
+                    </div>
+                    <div className="right">
+                        <img onClick={next} src={arrowright} alt="" />
+                    </div>
+                    <p className="compteur">
+                        {carousel + 1} / {props.images.length}
+                    </p>
+                </>
+            )}
             {props.images.map((image, index) => {
-                const currentIndex = index;
                 return (
                     <div key={index} className={`${carousel === index ? "active" : "inactive"}`}>
                         <img className="img_carousel" src={image} alt="" />
-                        <p className="compteur">
-                            {currentIndex + 1} / {props.images.length}
-                        </p>
                     </div>
                 );
             })}

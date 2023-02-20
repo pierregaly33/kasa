@@ -7,7 +7,7 @@
         .logement_information {
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
+            row-gap: 20px;
             h3 {
                 color: $color-1;
             }
@@ -29,17 +29,20 @@
             .host {
                 display: flex;
                 justify-content: space-between;
+                margin-bottom: 15px;
                 .host_name {
                     display: flex;
                     justify-content: center;
                     flex-direction: column;
                     text-align: right;
+                    margin-right: 10px;
                 }
                 p {
                     align-items: center;
                     font-family: $font-1;
                     color: $color-1;
                     text-align: right;
+                    font-size: 16px;
                 }
                 img {
                     border-radius: 65px;
@@ -66,15 +69,26 @@
             .host_and_rate {
                 align-items: unset;
                 flex-direction: row-reverse;
+                margin-top: 16px;
                 .rating {
                     justify-content: unset;
                     align-items: center;
                     width: 100%;
                 }
+                .host {
+                    img {
+                        height: 40px;
+                    }
+                    .host_name {
+                        p {
+                            font-size: 12px;
+                        }
+                    }
+                }
             }
             .logement_information {
                 justify-content: unset;
-                row-gap: 5px;
+                row-gap: 12px;
             }
         }
     }

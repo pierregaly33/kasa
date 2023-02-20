@@ -6,10 +6,14 @@ import Host from "../components/Host";
 import Rating from "../components/Rating";
 import Tag from "../components/Tag";
 import Logements from "../datas/Logements.json";
+import Error from "../pages/Error";
 
 const Fichelogement = () => {
     let { id } = useParams();
     const logement = Logements.find((logement) => logement.id === id);
+    if (!logement) {
+        return <Error />;
+    }
     return (
         <>
             <div className="fichelogement">
